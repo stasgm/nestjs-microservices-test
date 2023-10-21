@@ -34,3 +34,7 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# auto-generated types
+**/src/types/prisma/
+**/src/types/graphql.schema.ts

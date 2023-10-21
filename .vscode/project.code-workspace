@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "apps/api",
+      "path": "../apps/api"
+    },
+    {
+      "name": "apps/web",
+      "path": "../apps/web"
+    },
+  ],
+  "settings": {
+    "jest.autoRun": {
+      "jest.runAllTestsFirst": false
+    },
+    "jest.showCoverageOnLoad": false,
+    "jest.disabledWorkspaceFolders": [
+      "ROOT",
+      "apps/api",
+      "apps/web"
+    ]
+  }
+}
