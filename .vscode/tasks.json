@@ -2,25 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "🚀 api",
+      "label": "🚀 gateway",
       "command": "pnpm",
-      "args": ["api:dev"],
-      "options": {
-        "cwd": "${workspaceFolder}",
-      }
-    },
-    {
-      "label": "🖥️ web",
-      "command": "pnpm",
-      "args": ["web:dev"],
-      "options": {
-        "cwd": "${workspaceFolder}",
-      }
-    },
-    {
-      "label": "🛠️ admin",
-      "command": "pnpm",
-      "args": ["web-admin:dev"],
+      "args": ["start:gateway:dev"],
       "options": {
         "cwd": "${workspaceFolder}",
       }
@@ -29,14 +13,6 @@
       "label": "🧶 lint",
       "command": "pnpm",
       "args": ["lint"],
-      "options": {
-        "cwd": "${workspaceFolder}"
-      }
-    },
-    {
-      "label": "⚙️ lint-staged",
-      "command": "pnpm",
-      "args": ["lint-staged"],
       "options": {
         "cwd": "${workspaceFolder}"
       }

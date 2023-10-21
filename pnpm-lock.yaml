@@ -105,6 +105,12 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
+      webpack:
+        specifier: ^5.88.2
+        version: 5.89.0
+      webpack-node-externals:
+        specifier: ^3.0.0
+        version: 3.0.0
 
 packages:
 

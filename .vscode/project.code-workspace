@@ -3,11 +3,7 @@
     {
       "name": "apps/api",
       "path": "../apps/api"
-    },
-    {
-      "name": "apps/web",
-      "path": "../apps/web"
-    },
+    }
   ],
   "settings": {
     "jest.autoRun": {
@@ -16,8 +12,7 @@
     "jest.showCoverageOnLoad": false,
     "jest.disabledWorkspaceFolders": [
       "ROOT",
-      "apps/api",
-      "apps/web"
+      "apps/gateway",
     ]
   }
 }

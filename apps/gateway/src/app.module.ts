@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ClientProxyFactory } from '@nestjs/microservices';
+// import { ClientProxyFactory } from '@nestjs/microservices';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';

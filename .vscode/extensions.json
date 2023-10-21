@@ -3,11 +3,7 @@
     "orta.vscode-jest",
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
-    "graphql.vscode-graphql",
-    "graphql.vscode-graphql-syntax",
     "esbenp.prettier-vscode",
-    "prisma.prisma",
-    "bradlc.vscode-tailwindcss",
     "actboy168.tasks",
     "gruntfuggly.todo-tree"
   ]
