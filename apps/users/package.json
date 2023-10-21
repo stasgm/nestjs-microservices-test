@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@apps/gateway",
+  "name": "@apps/user",
   "version": "0.0.1",
-  "description": "Gatweway for microservices",
+  "description": "Users microservice",
   "license": "UNLICENSED",
   "author": "Stanislau",
   "scripts": {
