@@ -39,4 +39,3 @@ $ pnpm run test:cov
 
 ## TODO
 
-- [ ] add gRPC

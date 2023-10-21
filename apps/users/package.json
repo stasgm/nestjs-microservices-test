@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@apps/user",
+  "name": "@apps/users",
   "version": "0.0.1",
   "description": "Users microservice",
   "license": "UNLICENSED",

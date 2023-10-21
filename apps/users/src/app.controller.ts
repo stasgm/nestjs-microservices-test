@@ -1,19 +1,23 @@
 import { Controller } from '@nestjs/common';
-import { AppService } from './app.service';
 import { MessagePattern } from '@nestjs/microservices';
-import { delay } from 'rxjs';
+
+import { AppService } from './app.service';
 import { UserDTO } from './types';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  getVersion() {
+    return '0.0.1';
+  }
+
   @MessagePattern({ cmd: 'new_user' })
   newUser(user: UserDTO): string {
-    delay(10000);
     const result = this.appService.newUser(user);
+
     if (!result) {
-      return 'Book already exists';
+      return 'User already exists';
     } else {
       return result;
     }
