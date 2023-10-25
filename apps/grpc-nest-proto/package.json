@@ -1,0 +1,19 @@
+{
+  "name": "grpc-nest-proto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "proto:order": "protoc --plugin=node_modules/.bin/protoc-gen-ts_proto -I=../grpc-nest-proto/proto --ts_proto_out=../orders/src/ ../grpc-nest-proto/proto/order.proto --ts_proto_opt=nestJs=true --ts_proto_opt=fileSuffix=.pb",
+    "proto:all": "npm run proto:order"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/microservices": "^8.4.3",
+    "rxjs": "^7.5.5",
+    "ts-proto": "^1.110.2"
+  }
+}

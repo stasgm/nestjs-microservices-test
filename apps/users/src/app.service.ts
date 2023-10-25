@@ -2,7 +2,20 @@ import { Injectable } from '@nestjs/common';
 
 import { UserDTO } from './types';
 
-const users: UserDTO[] = [];
+const users: UserDTO[] = [
+  {
+    id: '1',
+    name: 'Stas',
+  },
+  {
+    id: '2',
+    name: 'Olya',
+  },
+  {
+    id: '1',
+    name: 'Nox',
+  },
+];
 
 @Injectable()
 export class AppService {

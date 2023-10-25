@@ -5,9 +5,10 @@ import { ClientProxyFactory, Transport } from '@nestjs/microservices';
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { UsersController } from './users.controller';
+import { OrderModule } from './orders/order.module';
 
 @Module({
-  imports: [ConfigModule.forRoot()],
+  imports: [ConfigModule.forRoot(), OrderModule],
   controllers: [AppController, UsersController],
   providers: [
     AppService,

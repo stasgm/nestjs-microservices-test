@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package order;
+
+service OrderService {
+  rpc getOrders(OrdersRequest) returns (OrdersResponse) {}
+  rpc getOrderById(OrderByIdRequest) returns (Order) {}
+  rpc addOrder(AddOrderRequest) returns (Order) {}
+}
+
+// getOrders
+message OrdersRequest {
+
+}
+
+message OrdersResponse {
+  repeated Order orders = 1;
+}
+
+message AddOrderRequest {
+  string number = 2;
+  string pickupDate = 3;
+  string description = 4;
+}
+
+message Order {
+  int32 id = 1;
+  string number = 2;
+  string pickupDate = 3;
+  string description = 4;
+}
+
+// getOrderById
+
+message OrderByIdRequest {
+  int32 id = 1;
+}
+
+message OrderByIdResponse {
+  Order order = 1;
+}
