@@ -1,4 +1,7 @@
 export interface UserDTO {
-  id: string;
+  name: string;
+}
+
+export interface ProductDTO {
   name: string;
 }
